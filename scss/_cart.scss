@@ -1,0 +1,422 @@
+.cart{
+    margin-top: 96px;
+    display: flex;
+    gap: 128px;
+
+
+    &_products{
+        display: flex;
+        flex-direction: column;
+
+        &_add{
+            display: flex;
+            flex-direction: column;
+            width: 652px;
+            gap: 40px;
+            
+
+            &_item{
+                height: 306px;
+                display: flex;
+                box-shadow: 6px 4px 32px rgba(0, 0, 0, 0.21);
+
+
+                &_img{
+                    width: 262px;
+                }
+
+                &_text{
+                    padding-top: 22px;
+                    padding-left: 31px;
+                    
+                    
+
+                    &_title{
+                        display: flex;
+                        gap: 57px;
+                        padding-bottom: 42px;
+
+                        &_name{
+                            width: 262px;
+                        height: 58px;
+                        color: #222;                        
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        flex-wrap: wrap;
+                        }
+
+                        &_cross{
+                            padding-top: 6px;
+                            
+                            &:hover path{
+                                fill:#F16D7F;
+                            }
+                        
+
+                        
+                    }
+                }
+
+                &_info{
+                    color: #575757;
+                    font-family: Lato;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-bottom: 6px;
+
+
+                    &_input{
+                        width: 44px;
+                        height: 25px;
+                        border: 1px solid rgba(234, 234, 234, 1);
+                        color: #656565;                            
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        outline: none;
+                        text-align: center;
+                        
+                        
+                    }
+                }
+
+                   
+
+                   
+
+
+                
+            
+        }
+    }
+        }
+
+        &_btn{
+            margin-top: 72px;
+            display: flex;
+            justify-content: space-between;
+
+            &_action{
+                color: #000;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 17px 40px;
+                background-color: #fff;
+                border: 1px solid rgba(164, 164, 164, 1);
+                margin-bottom: 128px;
+
+                &:hover{
+                    background-color: #F16D7F;
+                    color: #FFF;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+
+    &_form{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+
+        &_adress{
+            
+
+            &_title{
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+           
+
+            &_input{
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+
+                &_item{                                    
+                    
+                    padding: 13px  15px 17px;
+                    border:1px solid rgba(164, 164, 164, 1);                   
+
+                    &_submit{
+                        box-sizing: border-box;
+                        width: 102px;
+                        background-color: #fff;
+                        border:1px solid rgba(164, 164, 164, 1);
+                        color: #4A4A4A;                      
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding: 10px 13px;
+
+                        &:hover{
+                            background-color: #F16D7F;
+                            color: #fff;
+                            transition-duration: 0.5s;
+                        }
+                    }
+                   
+
+                }
+                
+            }
+        }
+
+        &_btn{
+            
+            background-color: rgba(245, 243, 243, 1);
+
+            &_total{
+               
+                &_sub{                 
+
+
+                    color: #4A4A4A;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &_price{
+                        margin-left: 30px;
+                        color: #4A4A4A;
+                    }
+
+                    &_box{
+                        padding-top: 39px;
+                        padding-left: 218px;
+                        padding-bottom: 12px;
+                
+                    }
+
+                }
+
+                &_grand{
+                    color: #222;                    
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+
+                    &_price{
+                        padding-left: 30px;
+                    }
+
+                    &_box{
+                        padding-left: 153px;
+                        padding-bottom: 21px;
+                        
+                    }
+                }
+            }
+
+
+            &_checkout{
+                box-sizing: border-box;
+                border: 1px solid #F16D7F;
+                background-color: #F16D7F;
+                margin:  17px 43px 42px 44px;
+                padding: 15px 35px;
+                color: #FFF;               
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:hover{
+                    background-color: #fff;
+                    color: #F16D7F;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            &_line{
+                border: 1px solid #E2E2E2;                
+                margin:  0 43px;
+            }
+        }
+        
+    }
+}
+
+.input{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    
+}
+
+input.cart_form_adress_input_item::placeholder{
+    color:  #B1B1B1;;    
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+     
+                  
+}
+
+
+@media (max-width: 1024px){
+
+   
+    .cart{
+        padding: 0 16px;
+        margin-top: 59px;
+        margin-bottom: 128px;
+        flex-direction: column;
+        gap: 0;
+
+        &_products{
+            min-width: 734px;
+
+            &_add{
+                width: 100%;
+
+                &_item{
+                    width: 100%;
+
+                    &_text_title{
+                        gap: 137px;
+                    }
+
+                    
+                }
+            }
+
+            &_btn{
+                justify-content: center;
+                gap: 40px;
+
+                &_action{
+                    margin-bottom: 64px;
+                }
+            }
+        }
+
+        &_form{
+            min-width:736px ;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 15px;
+            
+
+            &_adress{
+                width: 360px;
+            }
+
+            &_btn{
+                margin-top: 39px;
+                height: 214px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .cart{
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 96px;
+
+            &_products{
+                width: 358px;
+                gap: 32px;
+
+                &_add{
+                    max-width: 359px;
+
+                    &_item{
+                        max-width: 359px;
+                        max-height: 188px;
+
+                        &_img {
+                            max-width: 143px;
+                        }
+
+                        &_text{
+                            padding: 0;
+                            margin-top: 13px;
+                            margin-left: 17px;
+                            
+
+                            &_title{
+                            gap: 30px;
+                            padding-bottom: 25px;
+                            &_name{
+                                max-width: 144px;
+                                font-size: 16px;
+                            }
+
+                            &_cross{
+                                width: 10px;
+                                height: 11px;
+                            }
+
+                           
+                        }
+
+                        &_info{
+                            font-size: 14px;
+                            padding-bottom: 4px;
+
+                            &_input{
+                                width: 24px;
+                                height: 15px;
+                            }
+                        }
+                        }
+                    }
+                }
+
+                &_btn{
+                    margin-top: 0;
+                    margin-bottom: 48px;
+                    max-width: 359px;
+                gap: 9px;
+                &_action{
+                    padding: 9px 18px;
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_form{
+            flex-direction: column;
+            margin-bottom: 0;
+
+            &_btn{
+                max-width: 360px;
+            }
+        }
+        }
+    }
+
+
+
+      
+        
+        
+       
+
+        
+
+
+
+
+
